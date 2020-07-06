@@ -14,6 +14,6 @@ jobs:
         id: hello
         with:
           who-to-greet: "Manish Pandey"
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
